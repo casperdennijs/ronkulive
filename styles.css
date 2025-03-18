@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body, main {
+    height: max-content;
+}
+
+body {
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    z-index: 999;
+    min-height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav span {
+    font-weight: 800;
+    display: flex;
+    gap: .5rem;
+}
+
+nav span img {
+    max-width: 40px;
+    border-radius: 100%;
+}
+
+main > section {
+    height: 100vh;
+    width: 100%;
+}
+
+main > section > .content {
+    height: 100%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+#intro {
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+#intro .background {
+    width: 100%;
+    height: 100%;
+}
+
+#intro .background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#intro .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 16, 16, .75);
+    backdrop-filter: blur(5px);
+    max-width: 100%;
+}
+
+#intro h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 8rem;
+    font-weight: 800;
+    padding: 0 1rem;
+    animation: intro 1500ms linear forwards;
+}
+
+@keyframes intro {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+#about {
+    background-color: #122824;
+}
+
+#about .content {
+    align-items: center;
+    gap: 4rem;
+}
+
+#about section section {
+    flex: 1;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+#livestream .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#livestream #twitch-embed,
+#livestream #twitch-embed iframe {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #3FAF49;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+tbody {
+    background-color: #101010;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+.button {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    gap: .5rem;
+    max-width: max-content;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button.twitch {
+    background-color: #6441a5;
+}
+
+.button.stream {
+    background-color: #3FAF49;
+    color: #000;
+}
+
+#about .button {
+    margin-top: 1rem;
+}
+
+#about img {
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+#socials {
+    background-color: #3FAF49;
+}
+
+#socials .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#socials .links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#socials .social {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#socials .social > i {
+    font-size: 80px;
+}
+
+#socials .social span {
+    font-size: 1.5rem;
+}
+
+#socials .social.discord {
+    background-color: #5865F2;
+}
+
+#socials .social.youtube {
+   background-color: #ff0000; 
+}
+
+#socials .social.twitch {
+    background-color: #6441a5;
+}
+
+#socials .social.twitter {
+    background-color: #000;
+}
+
+#socials .social.spotify {
+    background-color: #1ed760;
+    color: #000;
+}
+
+#socials .social span {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#socials .social span > i {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #101010;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    section .content,
+    #socials .links {
+        flex-direction: column;
+    }
+
+    #intro h1 {
+        font-size: 4rem;
+    }
+
+    #socials .social {
+        aspect-ratio: unset;
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    #socials .social > i {
+        font-size: 1.5rem;
+    }
+
+    #about section section {
+        flex: unset;
+        width: 100%;
+    }
+
+    #about .content {
+        justify-content: center;
+    }
+
+    nav span a {
+        display: none;
+    }
+}

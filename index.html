@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RonkuLIVE</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <span>
+                <img src="assets/logo.webp" alt="Logo of RonkuLIVE">
+                <a href="#home">RonkuLIVE</a>
+            </span>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#livestream">Livestream</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a class="button twitch" href="" target="_blank">Twitch <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <section class="background">
+                <video autoplay muted loop>
+                    <source src="assets/background.webm" type="video/webm">
+                </video>
+            </section>
+            <section class="content">
+                <h1>RonkuLIVE</h1>
+            </section>
+        </section>
+        <section id="about">
+            <section class="content">
+                <section>
+                    <img src="assets/logo.webp" alt="Logo of RonkuLIVE">
+                    <h2>About RonkuLIVE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium felis id dolor imperdiet, sed rutrum quam porta. Proin hendrerit pretium nisl, in ornare urna lobortis a. Quisque sed arcu leo. In id finibus orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi interdum viverra auctor. Curabitur quis augue mauris. Donec scelerisque consectetur urna non congue.                </p>
+                    <a class="button stream" href="#livestream">Watch stream</a>
+                </section>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Weekly schedule</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Monday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Tuesday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Wednesday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Thursday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Friday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Saturday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                            <tr>
+                                <th>Sunday</th>
+                                <td>8:30 - 10:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+        <section id="livestream">
+            <section class="content">
+                <div id="twitch-embed"></div>
+            </section>
+        </section>
+        <section id="socials">
+            <section class="content">
+                <h2>Follow me on</h2>
+                <section class="links">
+                    <a class="social discord" href="#" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                        <span>Discord <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="social youtube" href="#" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="social twitch" href="#" target="_blank">
+                        <i class="fa-brands fa-twitch"></i>
+                        <span>Twitch <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="social twitter" href="#" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>Twitter/X <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="social spotify" href="#" target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span>Spotify <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>© 2025 RonkuLIVE, All rights reserved.</span>
+    </footer>
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            height: 600,
+            channel: "ronkulive",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["embed.example.com", "othersite.example.com"]
+        });
+    </script>
+</body>
+</html>
