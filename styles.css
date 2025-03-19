@@ -317,6 +317,7 @@ footer {
 
     #about .content {
         justify-content: center;
+        gap: 1.5rem;
     }
 
     nav span a {
