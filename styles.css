@@ -326,4 +326,12 @@ footer {
     .button.twitch {
         display: none;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #about img {
+        display: none;
+    }
 }
